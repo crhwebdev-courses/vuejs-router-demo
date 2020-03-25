@@ -1,10 +1,10 @@
 # vue-cli
 
-> A Vue.js project
+A demo of view router created for the udemy course: Vue JS 2: The Complete Guide
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 

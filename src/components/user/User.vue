@@ -12,6 +12,14 @@ export default {
       id: this.$route.params.id
     };
   },
+  watch: {
+    $route(to, from) {
+      //update id property when id param changes
+      // we must do this because routing does not recreate the page
+      // and therefore will not update the id property
+      this.id = to.params.id;
+    }
+  },
   methods: {
     navigateToHome() {
       //programatically route to home

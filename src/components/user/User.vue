@@ -2,6 +2,8 @@
   <div>
     <p>Loaded ID: {{ id }}</p>
     <button class="btn btn-primary" @click="navigateToHome">Go to Home</button>
+    <hr />
+    <router-view></router-view>
   </div>
 </template>
 

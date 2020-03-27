@@ -24,6 +24,17 @@ export default {
       type: String,
       default: ""
     }
+  },
+  beforeRouteEnter(to, from, next) {
+    //setup route guard using beforeRouteEnter lifecycle method from router
+    //note: cannot enter any data or properties on this component here becuase
+    // it has not been loaded.  Must instead call
+    // next(vm => vm.link)
+    if (true) {
+      next();
+    }
+
+    next(false);
   }
 };
 </script>

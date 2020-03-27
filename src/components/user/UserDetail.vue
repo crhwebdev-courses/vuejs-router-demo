@@ -14,7 +14,8 @@ export default {
       link: {
         name: "userEdit",
         params: { id: this.id },
-        query: { locale: "en", q: 100 }
+        query: { locale: "en", q: 100 },
+        hash: "#data"
       }
     };
   },

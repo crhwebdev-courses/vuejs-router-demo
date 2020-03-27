@@ -1,6 +1,5 @@
 <template>
   <div>
-    <p>Loaded ID: {{ id }}</p>
     <button class="btn btn-primary" @click="navigateToHome">Go to Home</button>
     <hr />
     <router-view></router-view>
@@ -9,11 +8,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      oldId: this.$route.params.id
-    };
-  },
   //now exporting param to prop using option set in router.js
   // this ensures it updates correctly when switiching between users
   // we use this instead of the wath method below
